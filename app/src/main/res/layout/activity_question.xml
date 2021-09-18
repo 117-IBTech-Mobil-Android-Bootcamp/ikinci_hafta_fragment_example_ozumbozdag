@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionActivity"
+    android:background="@drawable/gradient">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/close"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_rectangle_close"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"></androidx.appcompat.widget.AppCompatImageView>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_path__1_"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/close"
+        app:layout_constraintTop_toTopOf="@+id/close"
+        app:layout_constraintBottom_toBottomOf="@+id/close"
+        app:layout_constraintStart_toStartOf="@+id/close"></androidx.appcompat.widget.AppCompatImageView>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:id="@+id/cloud"
+        android:src="@drawable/ic_vector_cloud"
+        app:layout_constraintTop_toBottomOf="@id/close"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="109dp"></androidx.appcompat.widget.AppCompatImageView>
+
+    <ProgressBar
+        android:id="@+id/circle_progress_bar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:indeterminateOnly="false"
+        android:max="20"
+        android:backgroundTint="@color/white"
+        android:layout_marginBottom="14dp"
+        android:progressDrawable="@drawable/circle_progress"
+        app:layout_constraintBottom_toTopOf="@id/progress_bar"
+        app:layout_constraintStart_toStartOf="@id/progress_bar"
+        tools:progress="20" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_view_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/circle_progress_bar"
+        app:layout_constraintEnd_toEndOf="@+id/circle_progress_bar"
+        app:layout_constraintStart_toStartOf="@+id/circle_progress_bar"
+        app:layout_constraintTop_toTopOf="@+id/circle_progress_bar"
+        tools:text="20"></androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/progress_bar"
+        android:layout_marginTop="39dp"
+        android:src="@drawable/ic_rectangle_progress"
+        app:layout_constraintTop_toBottomOf="@id/cloud"
+        tools:layout_editor_absoluteX="16dp"></androidx.appcompat.widget.AppCompatImageView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="14dp"
+        android:text="3/10"
+        android:fontFamily="@font/sfprodisplayregular"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/progress_bar"
+        app:layout_constraintEnd_toEndOf="parent"></androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_rectangle_12"
+        app:layout_constraintStart_toStartOf="@+id/progress_bar"
+        app:layout_constraintTop_toTopOf="@+id/progress_bar"
+        app:layout_constraintBottom_toTopOf="@+id/progress_bar"></androidx.appcompat.widget.AppCompatImageView>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="37dp"
+        android:layout_height="23dp"
+        android:src="@drawable/ic_vector_cloud"
+        app:layout_constraintTop_toBottomOf="@+id/progress_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"></androidx.appcompat.widget.AppCompatImageView>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/word_area"
+        android:src="@drawable/ic_rectangle_for_word"
+        app:layout_constraintTop_toBottomOf="@id/progress_bar"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"></androidx.appcompat.widget.AppCompatImageView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wordTextBox"
+        android:textSize="28sp"
+        android:fontFamily="@font/sfprodisplayregular"
+        app:layout_constraintTop_toTopOf="@id/word_area"
+        app:layout_constraintBottom_toBottomOf="@id/word_area"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        ></androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="130dp"
+        android:layout_height="160dp"
+        android:id="@+id/firs_option"
+        android:src="@drawable/card_with_green_border"
+        app:layout_constraintTop_toBottomOf="@id/word_area"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="30dp"
+        ></androidx.appcompat.widget.AppCompatImageView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/first_word"
+        android:text="sgssg"
+        android:fontFamily="@font/sfprodisplayregular"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/firs_option"
+        app:layout_constraintEnd_toEndOf="@id/firs_option"
+        app:layout_constraintTop_toTopOf="@id/firs_option"
+        app:layout_constraintBottom_toBottomOf="@id/firs_option"></androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="130dp"
+        android:layout_height="160dp"
+        android:id="@+id/third_option"
+        android:src="@drawable/card_basic"
+        app:layout_constraintTop_toBottomOf="@id/firs_option"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="13dp"></androidx.appcompat.widget.AppCompatImageView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sgssg"
+        android:fontFamily="@font/sfprodisplayregular"
+        android:textSize="16sp"
+        android:id="@+id/third_word"
+        app:layout_constraintStart_toStartOf="@id/third_option"
+        app:layout_constraintEnd_toEndOf="@id/third_option"
+        app:layout_constraintTop_toTopOf="@id/third_option"
+        app:layout_constraintBottom_toBottomOf="@id/third_option"></androidx.appcompat.widget.AppCompatTextView>
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="130dp"
+        android:layout_height="160dp"
+        android:id="@+id/last_option"
+        android:src="@drawable/card_basic"
+        app:layout_constraintTop_toBottomOf="@id/second_option"
+        app:layout_constraintStart_toEndOf="@id/third_option"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="53dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="13dp"></androidx.appcompat.widget.AppCompatImageView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sgssg"
+        android:fontFamily="@font/sfprodisplayregular"
+        android:textSize="16sp"
+        android:id="@+id/last_word"
+        app:layout_constraintStart_toStartOf="@id/last_option"
+        app:layout_constraintEnd_toEndOf="@id/last_option"
+        app:layout_constraintTop_toTopOf="@id/last_option"
+        app:layout_constraintBottom_toBottomOf="@id/last_option"></androidx.appcompat.widget.AppCompatTextView>
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="130dp"
+        android:layout_height="160dp"
+        android:id="@+id/second_option"
+        android:src="@drawable/card_basic"
+        app:layout_constraintStart_toEndOf="@id/firs_option"
+        app:layout_constraintTop_toBottomOf="@id/word_area"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="53dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"></androidx.appcompat.widget.AppCompatImageView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sgssg"
+        android:fontFamily="@font/sfprodisplayregular"
+        android:textSize="16sp"
+        android:id="@+id/second_word"
+        app:layout_constraintStart_toStartOf="@id/second_option"
+        app:layout_constraintEnd_toEndOf="@id/second_option"
+        app:layout_constraintTop_toTopOf="@id/second_option"
+        app:layout_constraintBottom_toBottomOf="@id/second_option"></androidx.appcompat.widget.AppCompatTextView>
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

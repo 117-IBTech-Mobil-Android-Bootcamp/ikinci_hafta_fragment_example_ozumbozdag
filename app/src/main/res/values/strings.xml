@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WordQuiz</string>
+    <string name="start_now">Şimdi Başla       ></string>
+    <string name="word_test_paragraph">Kelime Testi, Sizin dil seviyenizi ölçmek içindir. Test sonunda doğru ve yanlışlarınızı görebileceksiniz! </string>
+</resources>

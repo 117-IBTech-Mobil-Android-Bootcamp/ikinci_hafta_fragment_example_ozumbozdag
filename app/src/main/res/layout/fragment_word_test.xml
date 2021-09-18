@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/main_background">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/skipText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/sfprodisplayregular"
+        android:paddingTop="10dp"
+        android:text="Atla"
+        android:textColor="@color/main_text_color_dark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"></androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/wordTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:fontFamily="@font/sfprodisplayregular"
+        android:text="Kelime Testi"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/word_paragraph"
+        android:layout_width="303dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/sfprodisplayregular"
+        android:text="@string/word_test_paragraph"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/wordTest"
+        android:gravity="center_horizontal"></androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonStart"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/word_test_button"
+        android:text="@string/start_now"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/ic_button_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/word_paragraph"
+         />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/people_image"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic__word_test_people"
+        app:layout_constraintBottom_toBottomOf="parent"></androidx.appcompat.widget.AppCompatImageView>
+</androidx.constraintlayout.widget.ConstraintLayout>
